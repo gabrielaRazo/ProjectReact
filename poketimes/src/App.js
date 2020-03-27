@@ -4,6 +4,7 @@ import { Route, BrowserRouter } from "react-router-dom";
 import Home from "./components/Home";
 import Contact from "./components/Contact";
 import About from "./components/About";
+import Post from "./components/Post";
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/contact" component={Contact} />
+          <Route path="/:post_id" component={Post} />
         </div>
       </BrowserRouter>
     );
